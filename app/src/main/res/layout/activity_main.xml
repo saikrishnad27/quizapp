@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image2"
+    tools:context=".MainActivity">
+    <LinearLayout
+        style="@style/chintu"
+        android:layout_margin="15dp">
+        <TextView
+            style="@style/krishna"
+            android:text="1.who is 16th president of usa"/>
+        <RadioGroup
+            style="@style/chintu"
+            android:id="@+id/b">
+          <RadioButton
+              style="@style/krishna"
+              android:id="@+id/sk1"
+             android:text="Abraham lincoln"
+             android:paddingRight="5dp"
+              android:onClick="question1"/>
+           <RadioButton
+            style="@style/krishna"
+               android:id="@+id/sk2"
+            android:text="John f kennedy"
+            android:paddingRight="5dp"
+               android:onClick="question1"/>
+            <RadioButton
+                style="@style/krishna"
+                android:id="@+id/sk3"
+                android:text="Kevlin max"
+                android:onClick="question1"
+                android:paddingRight="5dp"/>
+        </RadioGroup>
+        <TextView
+            style="@style/krishna"
+            android:text="2.who is the indian cricket captian with highest sucess %"/>
+        <RadioGroup
+            style="@style/chintu"
+            android:id="@+id/i">
+            <RadioButton
+                style="@style/krishna"
+                android:id="@+id/s1"
+                android:text="Suresh raina"
+                android:paddingRight="5dp"
+                android:onClick="question2"/>
+            <RadioButton
+                style="@style/krishna"
+                android:id="@+id/s2"
+                android:text="Gautam gambhir"
+                android:onClick="question2"
+                android:paddingRight="5dp"/>
+            <RadioButton
+                style="@style/krishna"
+                android:id="@+id/s3"
+                android:text="Rohith sharma"
+                android:onClick="question2"
+                android:paddingRight="5dp"/>
+        </RadioGroup>
+        <TextView
+            style="@style/krishna"
+            android:text="3.who is the first telugu actor to receive a international award"/>
+        <RadioGroup
+            style="@style/chintu"
+            android:id="@+id/n">
+            <RadioButton
+                style="@style/krishna"
+                android:id="@+id/skr1"
+                android:onClick="question3"
+                android:text="NTR"
+                android:paddingRight="5dp"/>
+            <RadioButton
+                style="@style/krishna"
+                android:id="@+id/skr2"
+                android:onClick="question3"
+                android:text="ANR"
+                android:paddingRight="5dp"/>
+            <RadioButton
+                style="@style/krishna"
+                android:onClick="question3"
+                android:id="@+id/skr3"
+                android:text="SVR"
+                android:paddingRight="5dp"/>
+        </RadioGroup>
+        <TextView
+            style="@style/krishna"
+            android:text="4.which is the best selling book in the world"/>
+        <RadioGroup
+            style="@style/chintu"
+            android:id="@+id/g">
+            <RadioButton
+                style="@style/krishna"
+                android:onClick="question4"
+                android:id="@+id/dsk1"
+                android:text="Bible"
+                android:paddingRight="5dp"/>
+            <RadioButton
+                style="@style/krishna"
+                android:onClick="question4"
+                android:id="@+id/dsk2"
+                android:text="Bhagavatham"
+                android:paddingRight="5dp"/>
+            <RadioButton
+                style="@style/krishna"
+                android:onClick="question4"
+                android:id="@+id/dsk3"
+                android:text="quran"
+                android:paddingRight="5dp"/>
+        </RadioGroup>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:layout_marginTop="20dp"
+            android:onClick="end"
+            android:id="@+id/sr"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sr1"
+            android:text="Welcome"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="24dp"
+            android:textSize="29dp"
+            android:layout_toRightOf="@id/sr"/>
+
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/srk"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="22dp"
+            android:text="Reset"
+            android:onClick="begin"/>
+    </LinearLayout>
+</ScrollView>
